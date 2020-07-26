@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Ankit Sood 
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ankit}{Sood}{ \href{mailto:ankit170698@gmail.com}{ankit170698@gmail.com} | 9958193469 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\sectionsep
+\subsection{DTU}
+\descript{BTECH IN COMPUTER SCIENCE}
+\location{CGPA(Till 5th sem) - 8.06}
+\sectionsep
+\sectionsep
+
+\subsection{New Green Field School}
+      (  Senior Secondry Education  )\\
+\location{Year of Completion | 2016}
+\location{ Percentage | 93.4}
+\sectionsep
+\sectionsep
+
+\subsection{Dav Model School}
+\location{Year of Completion | 2014}
+\location{ Percentage | 91.2}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Ankitsood007}{\bf Ankitsood007} \\
+Codeforces://  \href{https://codeforces.com/profile/ankitdtu007}{\bf ankitdtu007} \\
+Codechef://  \href{https://www.codechef.com/users/ankitdtu007}{\bf ankitdtu007} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\sectionsep
+\subsection{Languages}
+\sectionsep
+C++\\
+Python\\
+Java\\
+C\\
+Javascript\\
+HTML\\
+SQL\\
+\sectionsep
+\sectionsep
+
+\subsection{Skills}
+\sectionsep
+Android Development\\
+Machine Learning\\
+Web Development\\
+Competitive Programming\\
+\sectionsep
+\sectionsep
+
+\subsection{Courses}
+\sectionsep
+Operating System\\
+Database Management System\\
+Data Structures\\
+Algorithm Design and Analysis\\
+Object Oriented Programming\\
+Compiler Design\\
+Computer Networks
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\sectionsep
+\runsubsection{Samsung Research Institute Noida}
+\descript{| Student Trainee }
+\location{June 2020 - July 2020}
+\sectionsep
+\sectionsep
+\begin{tightemize}
+\item I was part of the Camera R\&D Team involved in the Development of a Custom Camera App.  {\href{https://github.com/Ankitsood007/Camera-App}{[\textbf{LINK}]}}
+\item During the Training , I worked on Camera 2 API and Java.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Chat App}
+{\href{https://github.com/Ankitsood007/ChatApp/tree/master/MyChapApp}{[\textbf{LINK}]}}
+\sectionsep
+\begin{tightemize}
+\item Its a simple Android Application which is basically a WhatsApp Clone in which users can Chat with each other after passing through an Authenticated Gateway.
+\item For implementation I used Java and for the purpose of Authentication and Data storage I used Google's Firebase.
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{My Movie Directory}
+{\href{https://github.com/Ankitsood007/My-Movie-App}{[\textbf{LINK}]}}
+\sectionsep
+\begin{tightemize}
+\item An Android Application which allows you to extract all the information about any Movie that you have searched for.
+\item I used OMDB API for the movie data.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Sentiment Analysis}
+{\href{https://github.com/Ankitsood007/Twitter-Sentiment-Analysis}{[\textbf{LINK}]}}
+\sectionsep
+\begin{tightemize}
+\item Used Naive Bayes Classifier , Logistic Regression and Support Vector Machine for implementing Sentiment Analysis.
+\item Used Twitter Streaming API for the live tweets.
+\item Used Python , NLTK , Matplotlib , Scikit Learn , Tweepy.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{COlor Game project}
+{\href{https://github.com/Ankitsood007/Color-game}{[\textbf{LINK}]}}
+\sectionsep
+\begin{tightemize}
+\item An interactive RGB guessing game implemented in HTML , CSS and javascript.
+\item Its Mainly an Application to explore DOM manipulation.
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Academic Achievements and Awards}
+\sectionsep
+\begin{tightemize}
+\item Secured a Global Rank 71 in Codechef's November Cook-off 2019 in Division 1.
+\item Secured a  Global Rank 119 in Codechef's October Lunchtime 2019 in Division 2.
+\item Secured a Global Rank 396 in Codechef's December Long Challenge 2018 in Division 2.
+\item Secured a Global Rank 407 in a Codeforces Round.
+\item Have a highest Rating of 1610 on Codeforces(EXPERT). 
+\item Secured All India Rank 6523 out of 1.2M candidates in Jee Mains 2017.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hobbies} 
+\sectionsep
+\begin{tightemize}
+\item Avid Guitar Player , Love To travel , Love Photography , Won First prize in a Singing solo at a School Competition.
+\end{tightemize}
+
+
+\end{minipage} 
+\end{document}  
